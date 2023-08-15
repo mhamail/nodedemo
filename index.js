@@ -5,7 +5,7 @@ const app = express()
 
 app.use(express.json())
 
-const port = 7000;
+const port = process.env.port || 7000;
 
 
 app.use("/",(req,res)=>{res.send("home page")})
