@@ -10,8 +10,8 @@ app.use(express.json())
 const port = process.env.PORT || 7000;
 
 
-app.use("/",(req,res)=>{res.send("home page")})
-app.use("/api",(req,res)=>{res.send("mhmarket")})
+app.get("/",(req,res)=>{res.send("home page")})
+app.get("/api",(req,res)=>{res.send("mhmarket")})
 
 console.log("mhmarket mhmarket")
 
