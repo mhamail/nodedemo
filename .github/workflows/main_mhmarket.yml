@@ -57,4 +57,4 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A553C3F746449179655CEB64563DD16 }}
           package: .
       - run: |
-          echo ${process.env.db}
+          echo "app name ${{env.db}}"
