@@ -8,11 +8,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+env:
+  db: mongodb+srv://mhamail1223:Wdmh%40020@cluster0.jkfvgjz.mongodb.net/Ecommerce
 
 jobs:
   build:
-    env:
-      db: mongodb+srv://mhamail1223:Wdmh%40020@cluster0.jkfvgjz.mongodb.net/Ecommerce
     runs-on: ubuntu-latest
 
     steps:
