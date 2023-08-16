@@ -1,11 +1,11 @@
 const Product = require('../models/product');
-const Category = require('../models/category')
-const User = require('../models/user')
-const slugify = require('slugify')
-const formidable = require('formidable')
-const fs = require('fs')
-const { errorHandler2, errorHandler, errorCode } = require('../helpers/errorHandler')
-const _ = require('lodash')
+// const Category = require('../models/category')
+// const User = require('../models/user')
+// const slugify = require('slugify')
+// const formidable = require('formidable')
+// const fs = require('fs')
+// const { errorHandler2, errorHandler, errorCode } = require('../helpers/errorHandler')
+// const _ = require('lodash')
 
 exports.create = (req, res) => {
     const form = formidable({ multiples: true });
