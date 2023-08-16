@@ -8,8 +8,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-env:
-  db: mongodb+srv://mhamail1223:Wdmh%40020@cluster0.jkfvgjz.mongodb.net/Ecommerce
 
 jobs:
   build:
@@ -21,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '16.x'
 
       - name: npm install, build, and test
         run: |
@@ -54,7 +52,5 @@ jobs:
         with:
           app-name: 'mhmarket'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A553C3F746449179655CEB64563DD16 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_54A23275EA844FF1AAC4567CCD12D158 }}
           package: .
-      - run: |
-          echo "app name ${{env.db}}"
