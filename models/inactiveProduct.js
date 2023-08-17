@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const { ObjectId } = mongoose.Schema;
 
-const productSchema = new mongoose.Schema(
+const inactiveProductSchema = new mongoose.Schema(
     {
         title: {
             type: String,
@@ -84,4 +84,4 @@ const productSchema = new mongoose.Schema(
     { timestamps: true }
 )
 
-module.exports = mongoose.model('Product', productSchema)
+module.exports = mongoose.model('InactiveProduct', inactiveProductSchema)
