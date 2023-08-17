@@ -8,6 +8,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+env:
+  db: mongodb+srv://mhamail1223:Wdmh%40020@cluster0.jkfvgjz.mongodb.net/Ecommerce
+  JWT_SECRET: sfgsGFSg45345gghd34
+  JWT_RESET_PASSWORD: HUDHG5YNBFFRIFG3
+  JWT_ACCOUNT_ACTIVATION: SDFSDF3432435CVFG
 
 jobs:
   build:
